@@ -7,7 +7,7 @@
 #include <BlackCat.h>
 
 void setup() {
-  setup_blackcat();
+  BlackCat();
   
   oled.clear();
   oled.text(0, 0, "Line Follower Demo");
