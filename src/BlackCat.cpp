@@ -22,7 +22,7 @@ void OLED::text(int x, int y, const char* format, ...) {
     va_start(args, format);
     vsprintf(buffer, format, args);
     va_end(args);
-    setCursor(x, y);
+    setCursor(x, y*8);
     print(buffer);
 }
 
